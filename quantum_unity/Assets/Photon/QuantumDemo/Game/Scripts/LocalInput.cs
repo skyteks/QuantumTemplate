@@ -11,7 +11,7 @@ public class LocalInput : MonoBehaviour
 
     public void PollInput(CallbackPollInput callback)
     {
-        Quantum.Input input = new Quantum.Input();
+        Quantum.Input input = new();
 
         // Note: Use GetButton not GetButtonDown/Up Quantum calculates up/down itself.
         input.Jump = UnityEngine.Input.GetButton("Jump");
